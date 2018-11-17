@@ -1,0 +1,27 @@
+# deployment.yaml 배포 한 후 deployment가 rs를 관리하는 것 보여주기
+- rs 삭제, pod 삭제해도 다시 태어나는거 확인 시키기
+
+# deployment-nginx.yaml 로 롤링업데이트 두번 시전
+nginx 버전은 1.7.12 -> 1.9.10 -> .1.10.2
+
+# 업데이트 후 pod describe 해서 업데이트가 된 것을 확인 시키기
+
+# rollout 명령어
+k rollout status deployments nginx 
+
+
+# rolling-update 하고 나서
+k get rs -o wide
+
+# 히스토리 검색
+rollout history deployment nginx
+
+# 자세히 보기
+rollout history deployment nignx --revision=2
+
+# 바로 앞으로 되돌리기
+k rollout undo deployment nginx
+
+# 리비전 값으로 되돌리기
+k rollout undo deploymeny nginx --to-revision=3
+
