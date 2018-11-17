@@ -1,0 +1,13 @@
+# volume, volumemount 확인 시켜 준 후 파드 배포
+
+$ gcloud compute ssh <node_name> --zone us-central1-a
+$ echo "hello man~" > /tmp/hello.txt
+$ cat /tmp/hello.txt 로 확인
+$ exit
+
+
+$ k exec -it hostpath -- /bin/bash
+$ ls
+$ cd shared 
+$ ls
+# hello.txt 확인
