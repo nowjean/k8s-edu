@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       annotations:
-        kubernetes.io/change-cause: "Update nginx to 1.10.2"
+        kubernetes.io/change-cause: "Create nginx to 1.7.12"
       labels:
         service: http-server
     spec:
