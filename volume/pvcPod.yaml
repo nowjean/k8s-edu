@@ -12,6 +12,6 @@ spec:
   volumes:
   - name : gkepath
     persistentVolumeClaim:
-      claimName: mydisk
+      claimName: gke-storage
 
 
