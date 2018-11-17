@@ -11,3 +11,17 @@ $ ls
 $ cd shared 
 $ ls
 # hello.txt 확인
+
+
+# pod 지우고, 해당 노드를 드레인시키자
+k drain <node_name> --ignore-daemonset
+k drain <node_name> --force
+
+k get no
+
+# 다시 파드 뜨ㅣ워서 파일 있는 지 확인하자
+
+
+# 노드 다시 활성화
+k uncordon <node_name>
+k get node
