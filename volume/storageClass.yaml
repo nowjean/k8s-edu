@@ -1,0 +1,8 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: gke-storage
+provisioner: kubernetes.io/no-provisioner
+parameters:
+  type: pd-standard
+  zones: us-central1-a
