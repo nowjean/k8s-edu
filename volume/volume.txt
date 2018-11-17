@@ -1,0 +1,15 @@
+$ k exec -it shared-volume --container redis -- /bin/bash
+
+$ cd /data/shared
+$ ls
+$ echo hello > file.txt
+$ ls
+$ cat file.txt
+
+
+$ k exec -it shared-volume --container nginx -- /bin/bash
+
+$ cd /data/shared
+
+# file.txt 있는 지 확인
+
