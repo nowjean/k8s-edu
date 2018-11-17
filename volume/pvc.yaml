@@ -5,6 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: gke-storage
   resources:
     requests:
       storage: 30Gi
