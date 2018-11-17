@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: gke-disk
+  name: gke-storage
 spec:
   accessModes:
     - ReadWriteOnce
