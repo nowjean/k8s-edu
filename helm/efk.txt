@@ -1,0 +1,2 @@
+# tart 풀기
+$ tar -xvzf
