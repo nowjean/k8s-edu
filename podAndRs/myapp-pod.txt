@@ -1,0 +1,7 @@
+$ k apply -f myapp-pod.yaml
+$ k get po
+$ k describe po
+$ k get po -o wide
+$ k get po --show-labels
+$ k get po -l <label>
+$ k get po -l '!<label>
