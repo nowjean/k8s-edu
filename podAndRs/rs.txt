@@ -1,0 +1,12 @@
+# rs 배포 한 다음에 
+$ k get rs
+$ k describe rs/<rs_name>
+
+# Rs에서 관리되는 pod 하나 지워서 상황 지켜보기 
+$ k get po --watch 사용함
+
+# 특정 노드 drain 해보기 
+$ k get po -o wide해서 pod가 어떤 노드에 위치에 있는 지 체크
+$ k drain <node_name> --ignore-daemonset
+$ k get po -o wide 해서 어디있는지 보기, age 확인
+$ k uncordon <node_name>
