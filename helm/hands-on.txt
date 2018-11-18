@@ -1,0 +1,19 @@
+$ helm create mychart
+# 차트 구조 확인 후
+
+# deployment 네임 변경
+# nginx 버전 변경
+# value 에서 ingress true 변경
+
+$ helm install mychart -n mychart
+
+
+
+배포 후 ingress로 배포된 것을 확인하고
+
+# deployment의 버전 변경, 시간 많으면 value로 설정해서 변경해보자
+helm upgrade <helm name> <directory>
+
+# 변경 후 버전 변경된 것 확인
+
+$ helm rollback <helm_name> <revision> 으로 롤백하고 확인시키기
