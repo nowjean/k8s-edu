@@ -26,6 +26,8 @@ $ helm install <efk>
 # 이미지 에러가 날 것임.....
 # 시간 남으면 이거 고치기 문제로 내기
 
+# 참고로 subChart의 value 파일은 부모 value를 오버라이드함.
+
 # port-forward
 $ kubectl port-forward efk-kibana-6cf88598b6-xlkv2 5601
 
