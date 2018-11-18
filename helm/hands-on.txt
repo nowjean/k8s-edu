@@ -7,6 +7,8 @@ $ helm create mychart
 
 $ helm install mychart -n mychart
 
+# 서비스 clusterip로 되어 있는데, nodeport로 바꾼느거 문제로 내보기
+ingress가 안되니께
 
 
 배포 후 ingress로 배포된 것을 확인하고
