@@ -1,2 +1,32 @@
+# 참고사이트
+# https://akomljen.com/get-kubernetes-logs-with-efk-stack-in-5-minutes/
+
+
+# helm repo 추가
+
+$ helm repo add akomljen-charts \
+    https://raw.githubusercontent.com/komljen/helm-charts/master/charts/
+
+$ helm repo update
+
+# helm fetch
+
+$ helm fetch akomljen-charts/elasticsearch-operator
+$ helm fetch akomljen-charts/efk
+
 # tart 풀기
 $ tar -xvzf
+
+# efk의 value 값에서 request cpu 값 100m로 변경
+
+
+$ helm install <akomljen-charts/elasticsearch-operator>
+$ helm install <efk>
+
+# 이미지 에러가 날 것임.....
+# 시간 남으면 이거 고치기 문제로 내기
+
+# port-forward
+$ kubectl port-forward efk-kibana-6cf88598b6-xlkv2 5601
+
+# localhost:5601 접속
