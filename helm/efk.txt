@@ -18,7 +18,7 @@ $ helm fetch akomljen-charts/efk
 $ tar -xvzf
 
 # efk의 value 값에서 request cpu 값 100m로 변경
-
+# elasticsearch 의 value값의 storage --> type: pd-standard / classPorvisioner -->
 
 $ helm install <akomljen-charts/elasticsearch-operator>
 $ helm install <efk>
