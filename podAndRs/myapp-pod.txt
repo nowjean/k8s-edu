@@ -5,3 +5,10 @@ $ k get po -o wide
 $ k get po --show-labels
 $ k get po -l <label>
 $ k get po -l '!<label>
+
+
+# labeling to node
+$ k label node <node_name> gpu=true
+$ k get nodes -l gpu=true
+
+# nodeselector-pod 배포하기
