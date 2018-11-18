@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: helloP
+spec: # 20times , 5containger at a time
+  completions: 20
+  parallelism: 5
+  template:
+    spec:
+      containers:
+      - name: helloP
+        image: perl
+        command: ["echo",  "Hello parallel world"]
+      restartPolicy: Never
