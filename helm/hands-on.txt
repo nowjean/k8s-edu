@@ -10,6 +10,12 @@ $ helm install --debug --dry-run mychart -n myc
 
 $ helm install mychart -n mychart
 
+# 메니페스트 확인
+$ helm get manifest <name>
+
+
+
+
 # 서비스 clusterip로 되어 있는데, nodeport로 바꾼느거 문제로 내보기
 ingress가 안되니까
 
