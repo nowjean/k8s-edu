@@ -5,10 +5,13 @@ $ helm create mychart
 # nginx 버전 변경
 # value 에서 ingress true 변경
 
+# 실제 설치 전 디버깅 테스트
+$ helm install --debug --dry-run mychart -n myc
+
 $ helm install mychart -n mychart
 
 # 서비스 clusterip로 되어 있는데, nodeport로 바꾼느거 문제로 내보기
-ingress가 안되니께
+ingress가 안되니까
 
 
 배포 후 ingress로 배포된 것을 확인하고
