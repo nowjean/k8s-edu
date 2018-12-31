@@ -20,6 +20,7 @@ helm init
 
 <h3>2-2. Trouble Shooting </h3>
  * helm forbidden error - deprecated 와 같은 에러가 나올 경우
+ 
  ```
  kubectl create serviceaccount --namespace kube-system tiller
  kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
@@ -29,6 +30,7 @@ helm init
  
  위 방법이 안되면,
  * Setup Tiller as cluster admin for cert manager
+ 
  ```
  Find password: gcloud container clusters describe <cluster_name> --zone us-west1-a
  kubectl apply --username=admin --password=FROMABOVE -f create-helm-service-account.yaml
